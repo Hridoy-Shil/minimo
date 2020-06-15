@@ -37,70 +37,29 @@ img {
 }
 
 /*basic css end*/
-
-
 /*header part start*/
 #header-area {}
 
-#banner-area .baner{
-    background-image: url("../img/first-image.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    width: 100%;
-    height: 500px;
-     margin-top: 100px;
+nav ul li {
+    padding-left: 10px;
 }
 
-.navbar {
-    padding: 15px 0;
-    position: fixed;
-    z-index: 99999;
-    width: 82.5%;
-   background-color: #f7f7f7;
-    
-}
-
-.menu ul li a {
+.navbar ul li a {
     font-size: 18px;
-    color: #605454 !important;
-    text-transform: uppercase;
-}
-
-.menu ul li {
-    padding-right: 20px;
-
-}
-
-.navbar-light .navbar-nav .nav-link {
-    position: relative;
-}
-
-.navbar-light .navbar-nav .nav-link:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #33CADF;
-    width: 0%;
-    height: 2px;
-    content: '';
-    transition: 0.5s;
-}
-
-.navbar-light .navbar-nav .nav-link:hover:after {
-    width: 100%;
+    font-weight: 700;
 }
 
 /*header part end*/
+/*Banera area start*/
+#banner-area .baner img {
+    width: 100%;
+    height: auto;
+}
 
-
-
+/*Baner area end*/
 /*photodiary area start*/
 #photodiary {
     padding: 80px 0;
-
 }
 
 #photodiary p.title,
@@ -144,10 +103,7 @@ p.card-top-title {
 }
 
 /*photodiary area end*/
-
-
 /* sign-up-area start*/
-
 #sign-up-area {
     padding: 90px 0px;
     background-color: #F0F0F0;
@@ -159,41 +115,28 @@ p.card-top-title {
     color: #323232;
 }
 
-#sign-up-area .form-group {
-    margin: auto;
+.input-group {
+    border-bottom: 2px solid;
 }
 
-#sign-up-area form .form-control {
-    background-color: transparent;
+.input-group .form-control::placeholder {
+    color: black;
+}
+
+.form-control,
+.input-group-text {
     border: none;
-    font-size: 18px;
-    width: 280px;
-}
-
-#sign-up-area form button.btn-custom {
     background-color: transparent;
-    border: none;
-    font-size: 25px;
-    padding-left: 30px;
-    color: #616161
+    cursor: pointer;
 }
 
-#sign-up-area .input-email {
-    border-bottom: 2px solid black;
-
-}
-
-#sign-up-area .input-email .form-control::placeholder {
-    color: #616161;
-    font-size: 18px;
-
+.input-group-text i {
+    font-size: 20px;
+    transform: rotate(50deg);
 }
 
 /* sign-up-area end*/
-
-
 /*life style area start*/
-
 #life-style-area {
     padding: 70px 0;
 }
@@ -205,8 +148,6 @@ p.card-top-title {
 }
 
 /*life style area end*/
-
-
 /*  footer-area start*/
 #footer-area {
     padding: 30px 0;
@@ -219,11 +160,10 @@ p.card-top-title {
     font-weight: 600;
     padding-bottom: 0;
     color: #616161;
-
 }
-#footer-area ul{
-margin-left: 55%
 
+#footer-area ul {
+    margin-left: 55%
 }
 
 #footer-area ul.social-icon li a {
@@ -232,7 +172,6 @@ margin-left: 55%
     padding-right: 10px;
     padding: 0 10p;
     color: #616161;
-    
 }
 
 #footer-area ul.social-icon li a:hover {
